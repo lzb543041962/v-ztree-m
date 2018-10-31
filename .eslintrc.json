@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "standard",
+    "plugin:vue/essential"
+  ],
+  "plugins": [
+    "vue",
+    "standard",
+    "promise"
+  ],
+  "rules": {
+    "vue/no-parsing-error": [
+      2,
+      {
+        "x-invalid-end-tag": false
+      }
+    ]
+  }
+}
